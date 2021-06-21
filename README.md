@@ -1,2 +1,2 @@
 # Data-Solutions-Group
-Scripts required DSG data QC
+Scripts required for DSG data QC
