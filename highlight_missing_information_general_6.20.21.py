@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 """
 Created on Fri Jun 18 13:08:16 2021
 
@@ -72,10 +71,10 @@ for num, sets in enumerate(filtered, start=0):
     worksheet = writer.sheets[exportDF[num]]
     colnumber=len(sets.columns)
     worksheet.autofilter(0, 0, colnumber, colnumber)
-    format1 = workbook.add_format({'text_wrap': True})
+    #format1 = workbook.add_format({'text_wrap': True})
     # format2.set_bg_color('green')
-    worksheet.set_column('B:I', 15, format1)
-    worksheet.set_column('K:CZ', 18, format1)
+    worksheet.set_column('B:I', 15)
+    worksheet.set_column('K:CZ', 18)
     header_format = workbook.add_format({
     'bold': True,
     'text_wrap': True,
